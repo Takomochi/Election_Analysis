@@ -67,13 +67,13 @@ This is an [image](https://github.com/Takomochi/Election_Analysis/blob/main/Reso
 ### Business Proposal
 The script is complete with outputting the result of the election. However, we need to modify the script if we need to apply this for other elections. There are some modifications we can make for reusing the script.
 
-- First of all, data to be read should be modified. THe code below is a path that leads to the data file "election_results.csv". We need to change the second argument to get the data we want.
+- We need to replace data information. The code below is a path that leads to the data file "election_results.csv." We need to change the arguments to get the data we want.
 ```
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
 ```
 
-- The order and the number of the columns might be different for other elections. To get the correct values, we need to be careful about which index contains what information. We need to add variables like the code below if we want to extract other information such as state name or political party name.
+- The order and the number of the columns might be different in other datasets. To get the correct values, we need to be careful about which column contains what information. We need to add variables like the code below if we want to extract other information such as state names or political party names.
 ```
 # Get the candidate name from each row.
         candidate_name = row[2]
@@ -82,7 +82,6 @@ file_to_load = os.path.join("Resources", "election_results.csv")
         county_name = row[1]
 ```
 
-If we add a variable, make another if statement, for loop the dictionary and write a summary of the result. 
+If we add a variable, make a list and a dictionary, if statement to fill them with values, for loop the dictionary and write a summary of the result. 
 
-By dividing the script into several blocks, we can see that the script is repeating the same tasks.
-This script is relatively straightforward to modify and use for other elections.
+By dividing the script into several blocks, we can see that the script is repeating the same tasks. This script is relatively straightforward to modify and use for other elections.
