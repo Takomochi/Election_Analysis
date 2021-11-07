@@ -65,7 +65,7 @@ This is an [image](https://github.com/Takomochi/Election_Analysis/blob/main/Reso
 
 ## Challenge Summary
 ### Business Proposal
-The script is complete with outputting the result of the election. However, we need to modify the script to be used for other elections. There are two modifications we can make.
+The script is complete with outputting the result of the election. However, we need to modify the script if we need to apply this for other elections. There are some modifications we can make for reusing the script.
 
 - First of all, data to be read should be modified. THe code below is a path that leads to the data file "election_results.csv". We need to change the second argument to get the data we want.
 ```
