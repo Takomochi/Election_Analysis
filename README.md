@@ -67,13 +67,16 @@ This is an [image](https://github.com/Takomochi/Election_Analysis/blob/main/Reso
 ### Business Proposal
 The script is complete with outputting the result of the election. However, we need to modify the script if we need to apply this for other elections. There are some modifications we can make for reusing the script.
 
-- We need to replace data information. The code below is a path that leads to the data file "election_results.csv." We need to change the arguments to get the data we want.
+- We need to replace data information. The code below is a path that leads to the data file "election_results.csv." We need to change the arguments to get the data we want analyze. Also, we need to change the text file to save the results for each election.
 ```
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
+
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
 ```
 
-- The order and the number of the columns might be different in other datasets. To get the correct values, we need to be careful about which column contains what information. We need to add variables like the code below if we want to extract other information such as state names or political party names.
+- The order and the number of the columns might be different in other datasets. To get the correct values, we need to be careful about which column contains what information. We need to add variables and set the right index like the code below if we want to extract other information such as state names or political party names.
 ```
 # Get the candidate name from each row.
         candidate_name = row[2]
