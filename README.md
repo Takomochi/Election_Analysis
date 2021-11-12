@@ -39,7 +39,7 @@ The purpose of this analysis is to show some additional data. The election commi
 
 [Election results - election_analysis.txt](https://github.com/Takomochi/Election_Analysis/blob/main/analysis/election_analysis.txt)
 - How many votes were cast in this congressional election?
-    - Total 369,711 votes were cast in the election.
+    - Total 369,711 votes were casted in the election.
     
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
     - Jefferson: 10.5% (38,855)
